@@ -22,12 +22,17 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Project Deep Dive
+- **Talkncode Architecture** - How we handle real-time video and code synchronization.
+- **Invigilator Features** - Learn how the automated verification system works.
+- **Language Support** - Documentation on the specific compilers and runtimes available for candidates.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Framework Resources
+To learn more about the underlying technology (Next.js), check out:
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Your feedback and contributions are welcome! Check out the [Issues](https://github.com/Wrostdevil/Talkncode/issues) tab to get started.
 
 ## Deploy on Vercel
 

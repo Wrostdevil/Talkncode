@@ -1,11 +1,13 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { ModeToggle } from "@/components/ModeToggle";
+
 
 import Image from "next/image";
 
 
 export default function Home() {
   return (
-    <div className="m-18">Homepage</div>
+    <div className="m-18">
+      <ModeToggle />
+    </div>
     
 );}

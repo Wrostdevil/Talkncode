@@ -55,7 +55,7 @@ http.route({
           clerkId: id,
           email,
           name,
-          image: image_url,
+          image: image_url
         });
       } catch (error) {
         console.log("Error creating user:", error);

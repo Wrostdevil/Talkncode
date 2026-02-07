@@ -6,8 +6,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="m-18">
-      <ModeToggle />
-    </div>
+    <nav className="border-b">
+      <div className="flex h-16 items-center px-4 container mx-auto">
+
+      </div>
+    </nav>
     
 );}

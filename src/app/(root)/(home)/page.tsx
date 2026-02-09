@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 // import MeetingModal from "@/components/MeetingModal";
 // import LoaderUI from "@/components/LoaderUI";
 import { Loader2Icon } from "lucide-react";
+import MeetingModal from "@/components/MeetingModal";
 // import MeetingCard from "@/components/MeetingCard";
 
 export default function Home() {
@@ -67,12 +68,12 @@ export default function Home() {
             ))}
           </div>
 
-          {/* <MeetingModal
+          <MeetingModal
             isOpen={showModal}
             onClose={() => setShowModal(false)}
             title={modalType === "join" ? "Join Meeting" : "Start Meeting"}
             isJoinMeeting={modalType === "join"}
-          /> */}
+          />
         </>
       ) : (
         <>

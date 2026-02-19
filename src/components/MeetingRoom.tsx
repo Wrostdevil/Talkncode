@@ -17,7 +17,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
-// import EndCallButton from "./EndCallButton";
+import EndCallButton from "./EndCallButton";
 // import CodeEditor from "./CodeEditor";
 
 function MeetingRoom() {
@@ -84,7 +84,7 @@ function MeetingRoom() {
                     <UsersIcon className="size-4" />
                   </Button>
 
-                  {/* <EndCallButton /> */}
+                  <EndCallButton />
                 </div>
               </div>
             </div>

@@ -17,8 +17,8 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
-import EndCallButton from "./EndCallButton";
-import CodeEditor from "./CodeEditor";
+// import EndCallButton from "./EndCallButton";
+// import CodeEditor from "./CodeEditor";
 
 function MeetingRoom() {
   const router = useRouter();
@@ -51,7 +51,6 @@ function MeetingRoom() {
               </div>
             )}
           </div>
-
           {/* VIDEO CONTROLS */}
 
           <div className="absolute bottom-4 left-0 right-0">
@@ -85,7 +84,7 @@ function MeetingRoom() {
                     <UsersIcon className="size-4" />
                   </Button>
 
-                  <EndCallButton />
+                  {/* <EndCallButton /> */}
                 </div>
               </div>
             </div>
@@ -95,7 +94,7 @@ function MeetingRoom() {
         <ResizableHandle withHandle />
 
         <ResizablePanel defaultSize={65} minSize={25}>
-          <CodeEditor />
+          {/* <CodeEditor /> */}
         </ResizablePanel>
       </ResizablePanelGroup>
     </div>

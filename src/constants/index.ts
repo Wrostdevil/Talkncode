@@ -89,6 +89,17 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func twoSum(nums []int, target int) []int {
+    // Write your solution here
+    
+}`
     },
     constraints: [
       "2 ≤ nums.length ≤ 104",
@@ -128,6 +139,17 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    int fib(int n) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func fib(n int) int {
+    // Write your solution here
+    
+}`
     },
     constraints: [
       "0 ≤ n ≤ 30"
@@ -163,6 +185,17 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    int trap(vector<int>& height) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func trap(height []int) int {
+    // Write your solution here
+    
+}`
     },
     constraints: [
       "n == height.length",
@@ -199,6 +232,17 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func numIslands(grid [][]byte) int {
+    // Write your solution here
+    
+}`
     },
     constraints: [
       "m == grid.length",
@@ -255,6 +299,37 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
         
     }
 }`,
+      cpp: `class LRUCache {
+public:
+    LRUCache(int capacity) {
+        // Write your solution here
+        
+    }
+    
+    int get(int key) {
+        
+    }
+    
+    void put(int key, int value) {
+        
+    }
+};`,
+      go: `type LRUCache struct {
+    
+}
+
+func Constructor(capacity int) LRUCache {
+    // Write your solution here
+    
+}
+
+func (this *LRUCache) Get(key int) int {
+    
+}
+
+func (this *LRUCache) Put(key int, value int)  {
+    
+}`
     },
     constraints: [
       "1 <= capacity <= 3000",
@@ -313,6 +388,34 @@ class Solution {
         
     }
 }`,
+      cpp: `/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ * int val;
+ * ListNode *next;
+ * ListNode() : val(0), next(nullptr) {}
+ * ListNode(int x) : val(x), next(nullptr) {}
+ * ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ * Val int
+ * Next *ListNode
+ * }
+ */
+func mergeKLists(lists []*ListNode) *ListNode {
+    // Write your solution here
+    
+}`
     },
     constraints: [
       "k == lists.length",
@@ -358,6 +461,17 @@ class Solution {
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func lengthOfLongestSubstring(s string) int {
+    // Write your solution here
+    
+}`
     },
     constraints: [
       "0 <= s.length <= 5 * 104",
@@ -393,6 +507,17 @@ class Solution {
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func reverseString(s []byte)  {
+    // Write your solution here
+    
+}`
     },
   },
   {
@@ -427,6 +552,17 @@ class Solution {
         
     }
 }`,
+      cpp: `class Solution {
+public:
+    bool isPalindrome(int x) {
+        // Write your solution here
+        
+    }
+};`,
+      go: `func isPalindrome(x int) bool {
+    // Write your solution here
+    
+}`
     },
   },
 ];
@@ -435,6 +571,8 @@ export const LANGUAGES = [
   { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
   { id: "python", name: "Python", icon: "/python.png" },
   { id: "java", name: "Java", icon: "/java.png" },
+  { id: "cpp", name: "C++", icon: "/cpp.png" },
+  { id: "go", name: "Go", icon: "/go.png" },
 ] as const;
 
 export interface CodeQuestion {
@@ -450,6 +588,8 @@ export interface CodeQuestion {
     javascript: string;
     python: string;
     java: string;
+    cpp: string;
+    go: string;
   };
   constraints?: string[];
 }

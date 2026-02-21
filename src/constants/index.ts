@@ -571,7 +571,7 @@ export const LANGUAGES = [
   { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
   { id: "python", name: "Python", icon: "/python.png" },
   { id: "java", name: "Java", icon: "/java.png" },
-  { id: "cpp", name: "C++", icon: "/cpp.png" },
+  { id: "cpp", name: "C++", icon: "/c++.png" },
   { id: "go", name: "Go", icon: "/go.png" },
 ] as const;
 

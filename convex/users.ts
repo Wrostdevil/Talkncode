@@ -18,7 +18,7 @@ export const syncUser = mutation({
 
     return await ctx.db.insert("users", {
       ...args,
-      role: "candidate",
+      role: "candidate", // Note: You can change this later if you want a different default!
     });
   },
 });
@@ -26,7 +26,9 @@ export const syncUser = mutation({
 export const getUsers = query({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
-    if (!identity) throw new Error("User is not authenticated");
+    
+    // FIX: Return an empty array instead of throwing an error to prevent crashes
+    if (!identity) return [];
 
     const users = await ctx.db.query("users").collect();
 

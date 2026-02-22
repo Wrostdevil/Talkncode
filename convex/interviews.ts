@@ -1,25 +1,14 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
-// export const getAllInterviews = query({
-//   handler: async (ctx) => {
-//     const identity = await ctx.auth.getUserIdentity();
-//     if (!identity) throw new Error("Unauthorized");
-
-//     const interviews = await ctx.db.query("interviews").collect();
-
-//     return interviews;
-//   },
-// });
 export const getAllInterviews = query({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Unauthorized");
 
-    if (!identity) {
-      return []; // ✅ DO NOT throw in queries
-    }
+    const interviews = await ctx.db.query("interviews").collect();
 
-    return await ctx.db.query("interviews").collect();
+    return interviews;
   },
 });
 

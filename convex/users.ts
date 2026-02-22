@@ -23,25 +23,14 @@ export const syncUser = mutation({
   },
 });
 
-// export const getUsers = query({
-//   handler: async (ctx) => {
-//     const identity = await ctx.auth.getUserIdentity();
-//     if (!identity) throw new Error("User is not authenticated");
-
-//     const users = await ctx.db.query("users").collect();
-
-//     return users;
-//   },
-// });
 export const getUsers = query({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("User is not authenticated");
 
-    if (!identity) {
-      return []; // ✅ DO NOT throw
-    }
+    const users = await ctx.db.query("users").collect();
 
-    return await ctx.db.query("users").collect();
+    return users;
   },
 });
 

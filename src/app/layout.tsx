@@ -21,7 +21,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "TalknCode",
-  description: "Speak , Solve, Suceed",
+  description: "Speak, Solve, Succeed",
+  icons: {
+    icon: "/talkncode-logo.png",
+  },
 };
 
 export default function RootLayout({
